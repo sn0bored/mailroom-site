@@ -8,12 +8,12 @@
   <meta name="theme-color" content="#131d21" media="(prefers-color-scheme: dark)">
   <title>Mailroom | Every domain you own, one inbox, built for your agent</title>
   <meta name="description" content="Mailroom receives email for every domain you own, keeps the originals on your own machine, and hands them to your AI agent over MCP as untrusted content. Open source, MIT, self-hosted.">
-  <link rel="canonical" href="https://mailroom.example">
+  <link rel="canonical" href="https://openmailroom.org">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mailroom">
   <meta property="og:title" content="Mailroom: every domain you own, one inbox, built for your agent">
   <meta property="og:description" content="Catch-all every domain, keep the originals, let your agent read them safely. Self-hosted, open source, MIT.">
-  <meta property="og:url" content="https://mailroom.example">
+  <meta property="og:url" content="https://openmailroom.org">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230f7f8c'/%3E%3Crect x='8' y='12' width='24' height='17' rx='3' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='m9 14 11 8 11-8' fill='none' stroke='white' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
@@ -149,7 +149,7 @@ Hi, the invoice is attached. Could you confirm receipt?
     <section class="section wrap" id="apps" aria-labelledby="apps-heading">
       <div class="split-section">
         <div class="section-heading"><p class="eyebrow">For apps</p><h2 id="apps-heading">One small sending API.</h2><p>Each product sends from its own domain through <code>POST /api/v1/send</code> with a key that is allowed to send only from the domains you list. Idempotency keys make retries safe. A health endpoint tells you it is up.</p></div>
-        <div class="request-example"><div class="code-heading"><span>POST /api/v1/send</span><span class="code-tag">curl</span></div><pre><code>curl https://mailroom.example/api/v1/send \
+        <div class="request-example"><div class="code-heading"><span>POST /api/v1/send</span><span class="code-tag">curl</span></div><pre><code>curl https://openmailroom.org/api/v1/send \
   --request POST \
   --header "Authorization: Bearer $MAILROOM_API_KEY" \
   --header "Content-Type: application/json" \
@@ -168,14 +168,14 @@ Hi, the invoice is attached. Could you confirm receipt?
       <div class="story-body">
         <p>I run a handful of small products. Each one has a domain. Each domain needed either a paid mailbox or a forwarder to my personal account, and every new project started with the same twenty minutes of email plumbing. I also wanted my agent to read that mail without me pasting it in.</p>
         <p>So this is the thing I kept wishing for: catch-all every domain, keep the originals on my own machine, let the agent read them safely, keep sending separate. It runs on a Mac mini in my basement. It is open source because the setup is the hard part, and an agent can do that part for you.</p>
-        <p class="story-status"><b>v0.1, November 2026.</b> Running in production for its author. Self-host today; a hosted version maybe later. <a href="mailto:hello@example.org">Say hello</a> if you run it.</p>
+        <p class="story-status"><b>v0.1, November 2026.</b> Running in production for its author. Self-host today; a hosted version maybe later. <a href="mailto:hello@openmailroom.org">Say hello</a> if you run it.</p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer wrap">
     <div><a class="wordmark footer-wordmark" href="#">Mailroom</a><p>Ruby on Rails 8, SQLite, Action Mailbox. Postmark first; Mailgun, SendGrid, Mandrill and a Postfix relay also work.</p></div>
-    <nav aria-label="Footer navigation"><span>MIT licensed</span><a href="https://github.com/sn0bored/mailroom">GitHub <span aria-hidden="true">↗</span></a><a href="https://github.com/sn0bored/mailroom/blob/main/SECURITY.md">Security</a><a href="mailto:hello@example.org">hello@example.org</a></nav>
+    <nav aria-label="Footer navigation"><span>MIT licensed</span><a href="https://github.com/sn0bored/mailroom">GitHub <span aria-hidden="true">↗</span></a><a href="https://github.com/sn0bored/mailroom/blob/main/SECURITY.md">Security</a><a href="mailto:hello@openmailroom.org">hello@openmailroom.org</a></nav>
   </footer>
   <script src="script.js" defer></script>
 </body>
